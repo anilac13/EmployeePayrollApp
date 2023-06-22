@@ -3,6 +3,7 @@ class EmployeePayrollData{
     set id(value){
         this._id = value;
     }
+
     get name() { return this._name; }
     set name(name){
         let nameRegex = RegExp('^[A-Z]{1}[A-Z,a-z]{2,}$');
@@ -10,6 +11,7 @@ class EmployeePayrollData{
             this._name = name;
         else throw "Invalid Name";
     }
+
     get profilePic() { return this._profilePic; }
     set profilePic(profilePic){
         this._profilePic = profilePic;
@@ -32,7 +34,10 @@ class EmployeePayrollData{
     }
     get startDate() { return this._startDate; }
     set startDate(startDate){
-        this._startDate = startDate;
+        let validateDate = Date.now();
+        if (validateDate <= startDate) 
+            this._startDate = startDate;
+        else throw "Invalid Date";
     }
 
     toString(){
