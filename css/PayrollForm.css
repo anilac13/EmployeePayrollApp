@@ -89,7 +89,7 @@ label {
     resize: vertical;
 }
 
-/*UC3*/
+/*UC3, UC4*/
 .profile-radio-content {
     display: flex;
     flex-direction: row;
@@ -103,4 +103,16 @@ label {
     width: 40px;
     border-radius: 50%;
     margin-left: 12px;
+}
+
+/*UC5*/
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font: normal normal normal 16px Roboto;
+    letter-spacing: 0;
+    color: #42515f;
+    background-color: transparent;
 }
