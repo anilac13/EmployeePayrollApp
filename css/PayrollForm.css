@@ -1,3 +1,4 @@
+/*UC1*/
 body {
     margin: 0;
     height: 100%;
@@ -34,7 +35,7 @@ body {
     color: #42515f;
 }
 
-
+/*UC2*/
 .form-content {
     min-height: calc(100%-80px);
     background-color: #f7f7f7;
@@ -88,7 +89,7 @@ label {
     resize: vertical;
 }
 
-
+/*UC3*/
 .profile-radio-content {
     display: flex;
     flex-direction: row;
