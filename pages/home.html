@@ -24,6 +24,37 @@
             <div class="emp-detail-text">Employee Details</div>
             <a href="../pages/PayrollForm.html" class="add-button"> <img src="">+ Add User</a>
         </div><!--header-content closed-->
+
+        <!--Table content-->
+        <div class="table-main">
+            <table id="display" class="table">
+                <tr>
+                    <th>NAME</th>
+                    <th>GENDER</th>
+                    <th>DEPARTMENT</th>
+                    <th>SALARY</th>
+                    <th>START DATE</th>
+                    <th>ACTIONS</th>
+                </tr>
+                <tr>
+                    <td><img class="profile" alt="" img src="../assets/one.jpg"> </td>
+                    <td>Anil Kumar</td>
+                    <td>Male</td>
+                    <td>
+                        <div class="dept-label">HR</div>
+                        <div class="dept-label">Engineer</div>
+                    </td>
+                    <td>30000</td>
+                    <td>12 Apr 2020</td>
+                    <td>
+                        <img id="1" onclick="remove(this)" alt="delete" src="../assets/delete.png" alt="" 
+                            style="height: 20px; width: 20px;">
+                        <img id="1" onclick="update(this)" alt="edit" src="../assets/edit.png" alt=""
+                            style="height: 20px; width: 20px;">
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div><!--main-content closed-->
 </body>
 </html>
