@@ -51,6 +51,15 @@ body {
     margin: 0 auto;
     padding-bottom: 25px;
 }
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
 .emp-detail-text {
     font: normal normal bold 24px/25px Roboto;
     letter-spacing: 0px;
@@ -101,7 +110,7 @@ body {
     overflow: auto;
 }
 .table {
-    width: 100%;
+    width: 80%;
     border-collapse: separate;
     border-spacing: 0 15px;
     min-width: 800px;

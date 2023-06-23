@@ -58,7 +58,7 @@ const createEmployeeData = () => {
     employeePayrollData.salary = getInputValueById('#salary');
     employeePayrollData.notes = getInputValueById('#notes');
     let date = getInputValueById('#day') + " " + getInputValueById('#month') + " " + getInputValueById('#year');
-    employeePayrollData.startDate = date;
+    employeePayrollData.date = Date.parse(date);
     alert("Employee payroll data is populated in object " + employeePayrollData.toString());
     return employeePayrollData;
 }
@@ -75,7 +75,7 @@ const getInputValueById = (id) => {
     let value = document.querySelector(id).value;
     return value;
 }
-// //old method
+//old method
 const getInputElementValue = (id) => {
     let value = document.getElementById(id).value;
     return value;
