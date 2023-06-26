@@ -21,7 +21,9 @@
     </header>
     <div class="main-content">
         <div class="header-content">
-            <div class="emp-detail-text">Employee Details</div>
+            <div class="emp-detail-text">
+                <strong>Employee Details</strong><div class="emp-count">10</div>
+            </div>
             <a href="../pages/PayrollForm.html" class="add-button"> <img src="">+ Add User</a>
         </div><!--header-content closed-->
 
@@ -29,11 +31,13 @@
         <div class="table-main">
             <table id="display" class="table">
                 <!-- <tr>
+                    <th></th>
                     <th>NAME</th>
                     <th>GENDER</th>
                     <th>DEPARTMENT</th>
                     <th>SALARY</th>
                     <th>START DATE</th>
+                    <th>NOTES</th>
                     <th>ACTIONS</th>
                 </tr>
                 <tr>
@@ -46,6 +50,7 @@
                     </td>
                     <td>30000</td>
                     <td>12 Apr 2020</td>
+                    <td>Employee</td>
                     <td>
                         <img id="1" onclick="remove(this)" alt="delete" src="../assets/delete.png" alt="" 
                             style="height: 20px; width: 20px;">
@@ -60,5 +65,6 @@
     <script defer src="../js/utility.js"></script>
     <script defer src="../js/site_properties.js"></script>
     <script defer src="../js/PayrollForm.js"></script>
+    <script defer src="../js/EmployeePayroll.js"></script>
 </body>
 </html>

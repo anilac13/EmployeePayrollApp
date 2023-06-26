@@ -20,7 +20,7 @@ body {
     border: 0px solid green;
     width: 80%;
 }
-.logo-content-img {
+.logo-content img {
     border: 0px solid #42515f;
 }
 .emp-text {
@@ -32,6 +32,8 @@ body {
 }
 .emp-payroll {
     color: #42515f;
+}*{
+    box-sizing: border-box;
 }
 
 .main-content {
@@ -51,7 +53,7 @@ body {
     margin: 0 auto;
     padding-bottom: 25px;
 }
-.header {
+/* .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -59,9 +61,9 @@ body {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 25px;
-}
+} */
 .emp-detail-text {
-    font: normal normal bold 24px/25px Roboto;
+    font: normal normal bold 24/25px Roboto;
     letter-spacing: 0px;
     color: #42515f;
     opacity: 1;
@@ -76,7 +78,7 @@ body {
     display: inline-block;
 }
 .add-button {
-    font: normal normal normal 22px/29px Roboto;
+    font: normal normal normal 22/29px Roboto;
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
@@ -89,7 +91,7 @@ body {
     text-decoration: none;
 }
 
-.profile-radio-content {
+/* .profile-radio-content {
     display: flex;
     flex-direction: row;
 }
@@ -102,7 +104,7 @@ body {
     width: 30px;
     border-radius: 60%;
     margin-left: 12px;
-}
+} */
 
 .table-main {
     width: 80%;
@@ -110,7 +112,7 @@ body {
     overflow: auto;
 }
 .table {
-    width: 80%;
+    width: 100%;
     border-collapse: separate;
     border-spacing: 0 15px;
     min-width: 800px;
@@ -123,6 +125,7 @@ td, th {
 th {
     background: #42515f 0% 0% no-repeat padding-box;
     border-radius: 3px 3px 0px 0px;
+    padding: 5px 8px;
     text-align: left;
     font: normal normal medium 18px/24px Roboto;
     letter-spacing: 0px;
@@ -132,11 +135,13 @@ th {
     border: 0px solid #dddddd;
 }
 tr:not(:first-child) {
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background-color: #ffffff 0% 0% no-repeat padding-box;
     border: 1px solid #e3e3e3;
     border-radius: 3px;
 }
 td {
+    text-align: left;
+    padding: 5px 8px;
     font: normal normal normal 14px/21px Roboto;
     letter-spacing: 0px;
     color: #3d3d3d;
@@ -148,6 +153,8 @@ td:first-child {
 }
 td img:first-child {
     margin-right: 10px;
+    width: 30px;
+    border-radius: 50%;
 }
 td img {
     cursor: pointer;
