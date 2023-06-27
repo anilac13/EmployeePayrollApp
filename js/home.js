@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     localStorage.removeItem('editEmp');
 });
 
+
 const createInnerHtml = () => {
     const headerHtml = "<th>Profile pic</th><th>Name</th><th>Gender</th><th>Department</th><th>Salary</th><th>Start Date</th><th>NOTES</th><th>Actions</th>";
     let innerHtml = `${headerHtml}`;
@@ -36,7 +37,7 @@ const createInnerHtml = () => {
 const getDeptHtml = (deptList) => {
     let deptHtml = '';
     for (const dept of deptList) {
-        deptHtml = `${deptHtml}<div class="dept-label">${dept}</div>`
+        deptHtml = `${deptHtml}<div class="dept-label">${dept}</div>`;
     }
     return deptHtml;
 }
