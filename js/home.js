@@ -15,12 +15,12 @@ const createInnerHtml = () => {
     for (const empPayrollData of empPayrollList) {
         innerHtml = `${innerHtml}   
         <tr>
-            <td><img class="profile" alt="" img src="${empPayrollData._profilePic}"> </td>
+            <td class="profile" alt=""><img src="${empPayrollData._profilePic}"> </td>
             <td>${empPayrollData._name}</td>
             <td>${empPayrollData._gender}</td>
             <td>${getDeptHtml(empPayrollData._department)}</td>
             <td>${empPayrollData._salary}</td>
-            <td>${empPayrollData._startDate}</td>
+            <td>${empPayrollData.StartDate}</td>
             <td>${empPayrollData._notes}</td>
             <td>
             <img id="${empPayrollData._id}" onclick="remove(this)" alt="delete" src="../assets/delete.png" alt="" 
@@ -37,17 +37,18 @@ const createInnerHtml = () => {
 const getDeptHtml = (deptList) => {
     let deptHtml = '';
     for (const dept of deptList) {
-        deptHtml = `${deptHtml}<div class="dept-label">${dept}</div>`;
+        deptHtml = `${deptHtml}<div class = "dept-label"><mark>${dept}</mark></div>`
     }
     return deptHtml;
 }
 
 const getEmpDataFromLocalStorage = () => {
-    return localStorage.getItem('EmployeePayrollList') ? JSON.parse(localStorage.getItem('EmployeePayrollList')) : [];
+    return localStorage.getItem('EmployeePayrollList') ? 
+        JSON.parse(localStorage.getItem('EmployeePayrollList')) : [];
 }
 
 const remove = (node) => {
-    let empPayrollData = empPayrollList.find(empData => empData._id == node._id);
+    let empPayrollData = empPayrollList.find(empData => empData._id == node.id);
     if (!empPayrollData) return;
     const index = empPayrollList.map(empData => empData._id).indexOf(empPayrollData._id);
     empPayrollList.splice(index, 1);

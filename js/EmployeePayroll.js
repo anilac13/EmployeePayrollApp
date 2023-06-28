@@ -34,10 +34,10 @@ class EmployeePayrollData{
     }
     get startDate() { return this._startDate; }
     set startDate(startDate){
-        let validateDate = Date.now();
-        if (validateDate <= startDate) 
-            this._startDate = startDate;
-        else throw "Invalid Date";
+        // let validateDate = Date.now();
+        // if (validateDate <= startDate) 
+        this._startDate = startDate;
+        // else throw "Invalid Date";
     }
 
     toString(){
